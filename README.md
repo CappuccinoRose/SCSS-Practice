@@ -1,16 +1,17 @@
-# React + Vite
+# SCSS 语法练习项目
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 一个专注于 SCSS 核心语法特性的练习项目，通过实际案例掌握 @for、@each 等高级用法。
 
-Currently, two official plugins are available:
+## 📖 项目简介
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+作为前端工程化的基础，CSS 预处理器是必不可少的知识点。本项目以 React 为载体，系统练习 SCSS 的常用语法特性，注重代码可维护性和模块化实践。
 
-## React Compiler
+## ✨ 技术栈
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - 前端框架
+- **Vite 7** - 构建工具
+- **React Router 7** - 路由管理
+- **SCSS** - CSS 预处理器
+- **ESLint** - 代码规范
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 练习内容

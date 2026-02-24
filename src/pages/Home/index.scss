@@ -1,0 +1,60 @@
+.home {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.practice-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    color: #888;
+    font-size: 13px;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+}

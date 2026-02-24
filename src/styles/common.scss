@@ -1,0 +1,37 @@
+// ==========================================
+// 公共样式 - 所有练习页面共享
+// ==========================================
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #c6eddd;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width:90%;
+  height:100vh; 
+  margin:50px auto;
+  border-radius:20px;
+  background:rgba(255, 255, 255, 0.3);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  .items {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+  }
+}

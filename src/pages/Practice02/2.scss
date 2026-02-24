@@ -1,0 +1,41 @@
+// ==========================================
+// 练习二：使用 @each 循环生成样式
+// ==========================================
+
+@use "sass:list";
+
+// 导入公共样式
+@use "../../styles/common.scss";
+
+// ==========================================
+// 核心：@each 循环演示
+// ==========================================
+
+// 方法二：遍历 Map（更推荐，键值对应更清晰）
+$colors-map:(
+  "green":#57e741,
+  "yellow":#f0e969,
+  "cyan":#8ff3ec,
+  "mint":#89ecd0,
+  "purple":#977ef7,
+  "red":#ef3b41,
+);
+
+// 基础 mixin
+@mixin item-base {
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  transition:0.3s ease-in-out;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+  &:hover {
+    transform:scale(1.1);
+  }
+}
+
+@each $name, $color in $colors-map {
+  .item-#{$name} {
+    @include item-base;
+    background:$color;
+  }
+}

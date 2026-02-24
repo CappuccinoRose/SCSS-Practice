@@ -1,0 +1,43 @@
+// ==========================================
+// 练习一：使用 @for 循环生成样式
+// ==========================================
+
+@use "sass:list";
+
+// 导入公共样式
+@use "../../styles/common.scss";
+
+
+// 基础 mixin
+@mixin item-base {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+// 容器样式
+.container01 {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+// 通过索引动态生成选择器和计算值
+@for $i from 1 through 6 {
+  .item#{$i} {
+    @include item-base;
+    &:hover {
+      transform: translateY(-$i * 3px);
+    }
+  }
+}
