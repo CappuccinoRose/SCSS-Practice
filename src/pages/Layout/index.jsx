@@ -26,6 +26,12 @@ export default function Layout() {
           >
             练习二
           </NavLink>
+          <NavLink 
+            to="/03" 
+            className={({ isActive }) => isActive ? 'active' : ''}
+          >
+            练习三
+          </NavLink>
         </div>
       </nav>
 

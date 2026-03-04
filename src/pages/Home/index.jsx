@@ -29,6 +29,16 @@ export default function Home() {
             <li>更适合配置驱动的场景</li>
           </ul>
         </Link>
+
+        <Link to="/03" className="practice-card">
+          <h3>练习三：@while 循环</h3>
+          <p>手动控制循环条件</p>
+          <ul>
+            <li>手动初始化和更新循环变量</li>
+            <li>更灵活的条件判断</li>
+            <li>适合复杂递增/递减场景</li>
+          </ul>
+        </Link>
       </div>
     </div>
   );
